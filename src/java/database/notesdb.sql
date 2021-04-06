@@ -40,6 +40,8 @@ INSERT INTO `user` (`email`,`active`,`first_name`,`last_name`,`password`,`role`)
 	VALUES ('cprg352+anne@gmail.com', true, 'Anne','Annerson', 'password', 2);
 INSERT INTO `user` (`email`,`active`,`first_name`,`last_name`,`password`,`role`)
 	VALUES ('cprg352+barb@gmail.com', true, 'Barb','Barber', 'password', 2);
+INSERT INTO `user` (`email`,`active`,`first_name`,`last_name`,`password`,`role`)
+	VALUES ('cprg352.te.test1@gmail.com', true, 'Test','Tester', 'password', 2);
 
 INSERT INTO `note` (`Title`, `Contents`, `Owner`)
     VALUES ('Quote #1', 'Writing is nature''s way of letting you know how sloppy your thinking is.', 'cprg352+anne@gmail.com');

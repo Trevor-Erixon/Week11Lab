@@ -16,6 +16,7 @@ public class AccountService {
             User user = userDB.get(email);
             if (password.equals(user.getPassword())) {
                 Logger.getLogger(AccountService.class.getName()).log(Level.INFO, "Successful login by {0}", email);
+                GmailService.sendMail(user.getEmail(), "Notes App Login", "Hi " + user.getFirstName() + ", you logged in on " + (new Date()).toString(), false);
                 
                 String to = user.getEmail();
                 String subject = "Notes App Login";
@@ -26,7 +27,7 @@ public class AccountService {
                 tags.put("lastname", user.getLastName());
                 tags.put("date", (new java.util.Date()).toString());
                 
-                GmailService.sendMail(to, subject, template, tags);
+                //GmailService.sendMail(to, subject, template, tags);
                 return user;
             }
         } catch (Exception e) {
