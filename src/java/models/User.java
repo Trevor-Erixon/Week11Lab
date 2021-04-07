@@ -122,8 +122,8 @@ public class User implements Serializable {
         return resetPasswordUuid;
     }
 
-    public void setResetPasswordUuid(String restPasswordUuid) {
-        this.resetPasswordUuid = restPasswordUuid;
+    public void setResetPasswordUuid(String resetPasswordUuid) {
+        this.resetPasswordUuid = resetPasswordUuid;
     }
 
     @XmlTransient

@@ -10,7 +10,7 @@
         <h1>Notes App</h1>
         <h2>Reset Password</h2>        
         <p>Please enter your email address to reset your password</p>
-        <form action="/reset" method="POST">
+        <form action="reset" method="POST">
             Email Address: <input type="text" name="resetPasswordEmail"><br>
             <input type="submit" value="Submit">
         </form>
